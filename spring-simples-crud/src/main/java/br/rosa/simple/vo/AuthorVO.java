@@ -9,7 +9,7 @@ public class AuthorVO {
     private String sexo;
 
     public AuthorVO(String firstName, String lastName) {
-        System.out.println("MOre Merg Testing");
+        System.out.println("yoo baby, vamos");
         this.firstName = firstName;
         this.lastName = lastName;
     }

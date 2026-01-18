@@ -9,6 +9,7 @@ public class BadRequestException extends RuntimeException {
 	private static final long serialVersionUID = -1018355024036251860L;
 
 	public BadRequestException() {
+		// comentario teste
 		super();
 	}
 

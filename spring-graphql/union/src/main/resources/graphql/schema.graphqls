@@ -1,0 +1,29 @@
+type Query {
+  creatures: [Creature]
+}
+
+interface Pet {
+  id: ID!
+  name: String
+  color: String
+}
+
+type Dog implements Pet {
+  id: ID!
+  name: String
+  color: String
+  barks: Boolean
+}
+
+type Cat implements Pet {
+  id: ID!
+  name: String
+  color: String
+  meows: Boolean
+}
+
+type Human {
+  name: String
+}
+
+union Creature = Dog | Cat | Human

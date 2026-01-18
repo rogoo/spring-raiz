@@ -1,0 +1,27 @@
+type Query {
+  favoritePet: [Pet]
+  favoritePetByName(name: String): [Pet]
+}
+
+interface Pet {
+  name: String
+  owner: Person
+}
+
+type Dog implements Pet {
+  name: String
+  owner: Person
+  doesBark: Boolean
+}
+
+type Cat implements Pet {
+  name: String
+  owner: Person
+  doesMeow: Boolean
+}
+
+type Person {
+  id: String
+  firstName: String
+  lastName: String
+}

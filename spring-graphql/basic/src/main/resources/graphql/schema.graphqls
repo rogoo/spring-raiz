@@ -1,0 +1,14 @@
+type Query {
+  favoritePet: [Pet]
+}
+
+type Pet {
+  name: String
+  owner: Person
+}
+
+type Person {
+  id: String
+  firstName: String
+  lastName: String
+}

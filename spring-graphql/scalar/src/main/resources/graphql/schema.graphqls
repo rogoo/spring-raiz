@@ -1,0 +1,18 @@
+scalar Date
+
+type Query {
+  favoritePet: [Pet]
+  favoritePetByName(name: String): [Pet]
+}
+
+type Pet {
+  name: String
+  owner: Person
+  dateOfBirth: Date
+}
+
+type Person {
+  id: String
+  firstName: String
+  lastName: String
+}

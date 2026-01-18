@@ -1,0 +1,11 @@
+directive @important(desc: String!) on FIELD_DEFINITION
+
+type Query {
+  pets: [Pet] @important(desc: "die and die")
+}
+
+type Pet {
+  id: ID!
+  name: String
+  color: String
+}

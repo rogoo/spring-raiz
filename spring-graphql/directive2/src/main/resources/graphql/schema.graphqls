@@ -1,0 +1,12 @@
+directive @important(desc: String!) on FIELD_DEFINITION
+directive @cache(maxAge: Int) on FIELD
+
+type Query {
+  pets: [Pet] @important(desc: "die and die")
+}
+
+type Pet {
+  id: ID!
+  name: String
+  color: String
+}

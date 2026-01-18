@@ -1,0 +1,27 @@
+type Query {
+  posts: [Post]
+  post(id: ID!): Post
+  postSearch(input: PostSearchInput!): [Post]
+}
+
+type Mutation {
+  changePostTitle(id: ID!, newTitle: String!): Post
+}
+
+input PostSearchInput {
+  title: String
+  body: String
+}
+
+type Post {
+  id: ID!
+  title: String
+  body: String
+  user: User
+}
+
+type User {
+  id: ID
+  name: String
+  username: String
+}

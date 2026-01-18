@@ -9,6 +9,7 @@ public class AuthorVO {
     private String sexo;
 
     public AuthorVO(String firstName, String lastName) {
+        System.out.println("MOre Merg Testing");
         this.firstName = firstName;
         this.lastName = lastName;
     }
@@ -59,5 +60,17 @@ public class AuthorVO {
 
     public void setSexo(String sexo) {
         this.sexo = sexo;
+    }
+
+    @Override
+    public String toString() {
+        return "AuthorVO{" +
+                "id=" + id +
+                ", firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", birthday='" + birthday + '\'' +
+                ", active=" + active +
+                ", sexo='" + sexo + '\'' +
+                '}';
     }
 }

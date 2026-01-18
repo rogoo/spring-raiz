@@ -21,6 +21,7 @@ public class AuthorController {
     @GetMapping
     public List<Author> listaTodos(@RequestParam(required = false) String firstName,
                                    @RequestParam(required = false) String lastName) {
+        System.out.println("foi e foi");
         return this.authorService.listaTodos(firstName, lastName);
     }
 

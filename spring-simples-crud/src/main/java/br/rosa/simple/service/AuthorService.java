@@ -24,11 +24,13 @@ public class AuthorService {
 
 	public AuthorService(AuthorRepository authorRepository,
 			PostRepository postRepository) {
+		// testing
 		this.authorRepository = authorRepository;
 		this.postRepository = postRepository;
 	}
 
 	public Author save(AuthorVO authorVO) {
+		System.out.println("Testing");
 		Author author = converteAuthor(authorVO);
 		return this.authorRepository.save(author);
 	}

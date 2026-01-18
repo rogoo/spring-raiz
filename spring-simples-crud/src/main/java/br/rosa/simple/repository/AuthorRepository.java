@@ -9,6 +9,7 @@ import org.springframework.data.repository.query.Param;
 import br.rosa.simple.domain.Author;
 import jakarta.annotation.Nullable;
 
+// Testando merge
 public interface AuthorRepository extends JpaRepository<Author, Long> {
 
 	@Query(value = "select a from Author a where (:firstName is null or a.firstName like %:firstName%) and (:lastName is null or a.lastName like %:lastName%)")

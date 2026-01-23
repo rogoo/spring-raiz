@@ -21,13 +21,10 @@ public class AuthorController {
     @GetMapping
     public List<Author> listaTodos(@RequestParam(required = false) String firstName,
                                    @RequestParam(required = false) String lastName) {
+        //oi
         System.out.println("foi e foi");
+        //oi
         return this.authorService.listaTodos(firstName, lastName);
-    }
-
-    @GetMapping(value = "/{id}")
-    public Author recuperarAuthorPorId(@PathVariable Long id) {
-        return this.authorService.findById(id);
     }
 
     @PutMapping()

@@ -26,8 +26,6 @@ public class AuthorController {
 
     @GetMapping(value = "/{id}")
     public Author recuperarAuthorPorId(@PathVariable Long id) {
-        //teste
-        //mais teste
         return this.authorService.findById(id);
     }
 

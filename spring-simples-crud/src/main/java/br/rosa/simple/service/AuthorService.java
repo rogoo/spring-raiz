@@ -32,10 +32,12 @@ public class AuthorService {
 	public Author save(AuthorVO authorVO) {
 		System.out.println("Testing");
 		Author author = converteAuthor(authorVO);
+		// Nao Sei bla bla
 		return this.authorRepository.save(author);
 	}
 
 	private Author converteAuthor(AuthorVO authorVO) {
+		// blu blu
 		if (authorVO == null)
 			return null;
 

@@ -23,8 +23,16 @@ public class AuthorController {
                                    @RequestParam(required = false) String lastName) {
         //oi
         System.out.println("foi e foi");
-        //oi
+        System.out.println("mais teste");
+        // oi
         return this.authorService.listaTodos(firstName, lastName);
+    }
+
+    @GetMapping(value = "/{id}")
+    public Author recuperarAuthorPorId(@PathVariable Long id) {
+        //teste
+        //mais teste
+        return this.authorService.findById(id);
     }
 
     @PutMapping()
@@ -33,8 +41,7 @@ public class AuthorController {
     }
 
     @PatchMapping(value = "/{id}")
-    public Author atualizarAuthor(@PathVariable Long id,
-                                  @RequestBody AuthorVO author) {
+    public Author atualizarAuthor(@PathVariable Long id, @RequestBody AuthorVO author) {
         return this.authorService.update(id, author);
     }
 

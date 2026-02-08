@@ -1,34 +1,24 @@
 package br.rosa.restapi.vo;
 
-import java.util.Date;
-
 public class ProductVO {
 
-	private Integer id;
-	private String name;
-	private Date bornDate;
+    private String nomeCompleto;
 
-	public Integer getId() {
-		return id;
-	}
+    private Integer ano;
 
-	public void setId(Integer id) {
-		this.id = id;
-	}
+    public String getNomeCompleto() {
+        return nomeCompleto;
+    }
 
-	public String getName() {
-		return name;
-	}
+    public void setNomeCompleto(String nomeCompleto) {
+        this.nomeCompleto = nomeCompleto;
+    }
 
-	public void setName(String name) {
-		this.name = name;
-	}
+    public Integer getAno() {
+        return ano;
+    }
 
-	public Date getBornDate() {
-		return bornDate;
-	}
-
-	public void setBornDate(Date bornDate) {
-		this.bornDate = bornDate;
-	}
+    public void setAno(Integer ano) {
+        this.ano = ano;
+    }
 }

@@ -1,37 +1,40 @@
 package br.rosa.restapi.vo;
 
-import java.util.Date;
-
 import io.swagger.v3.oas.annotations.media.Schema;
+
+import java.util.Date;
 
 public class TestVO {
 
-	@Schema(name = "id of test", description = "id of die", example = "666", requiredMode = Schema.RequiredMode.REQUIRED)
-	private Integer id;
-	private String name;
-	private Date bornDate;
+    @Schema(name = "id of test", description = "id lindo", example = "123321", requiredMode
+            = Schema.RequiredMode.REQUIRED)
+    private Integer id;
 
-	public Integer getId() {
-		return id;
-	}
+    private String name;
 
-	public void setId(Integer id) {
-		this.id = id;
-	}
+    private Date bornDate;
 
-	public String getName() {
-		return name;
-	}
+    public Integer getId() {
+        return id;
+    }
 
-	public void setName(String name) {
-		this.name = name;
-	}
+    public void setId(Integer id) {
+        this.id = id;
+    }
 
-	public Date getBornDate() {
-		return bornDate;
-	}
+    public String getName() {
+        return name;
+    }
 
-	public void setBornDate(Date bornDate) {
-		this.bornDate = bornDate;
-	}
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public Date getBornDate() {
+        return bornDate;
+    }
+
+    public void setBornDate(Date bornDate) {
+        this.bornDate = bornDate;
+    }
 }

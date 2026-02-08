@@ -16,8 +16,8 @@ public class Config {
 		return new OpenAPI()
 				.info(new Info()
 						.title("Test API")
-						.version("2.0")
-						.description("Beautiful Description")
+						.version("0.9.9.9.9")
+						.description("Testando o maravilhoso Swagger")
 						.license(new License().name("Rod 2.0").url("https://dee.org")));
 		// @formatter:on
 	}
